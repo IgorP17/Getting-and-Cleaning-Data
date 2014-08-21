@@ -129,3 +129,10 @@ if (file.exists(outPath)){
 #tidySet <- read.table("./mytidyset.txt", header=TRUE)
 #dim(tidySet)
 #colnames(tidySet)
+
+
+##Here is another way to do step 5
+#aggr <- aggregate(x=extractedData, by=list(extractedData$Subject, as.character(extractedData$Activity)), mean)
+#aggrSorted <- aggr[order(aggr$Subject),]
+#TODO here we need adjust cols...
+#write.table(aggrSorted, file="./secondway.txt", sep="\t", row.names=FALSE)
