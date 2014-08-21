@@ -33,7 +33,7 @@ Why not "mean"? Because this approach states in features_info.txt.
 Also, here we set names for variables and activities   
 This is steps 2 - 4 from task  
 4. Lines 101 - 113: Melting data and calculate means 
-This is steps 2 - 4 from task  
+This is step 5 from task  
 5. Below lines: Write data to the file mytidyset.txt with \t separator.  
 
 
