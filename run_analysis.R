@@ -132,7 +132,12 @@ if (file.exists(outPath)){
 
 
 ##Here is another way to do step 5
-#aggr <- aggregate(x=extractedData, by=list(extractedData$Subject, as.character(extractedData$Activity)), mean)
-#aggrSorted <- aggr[order(aggr$Subject),]
+#======#aggr <- aggregate(extractedData, list(Subject = as.numeric(extractedData$Subject), Activity = as.character(extractedData$Activity)), mean)
+#In that way no additional cols will be created
+aggr <- aggregate(. ~ Subject + Activity, data = extractedData,FUN = mean)
+aggrSorted <- aggr[order(aggr$Subject),]
 #TODO here we need adjust cols...
-#write.table(aggrSorted, file="./secondway.txt", sep="\t", row.names=FALSE)
+write.table(aggrSorted, file="./secondway.txt", sep="\t", row.names=FALSE)
+
+print("Is 2 object created identical inside?")
+all(tidyData == aggrSorted)
