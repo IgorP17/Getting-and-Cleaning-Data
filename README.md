@@ -34,8 +34,7 @@ Also, here we set names for variables and activities
 This is steps 2 - 4 from task  
 4. Lines 101 - 113: Melting data and calculate means 
 This is step 5 from task  
-5. Lines 114 - 126: Write data to the file mytidyset.txt with \t separator.
-+  
+5. Lines 114 - 126: Write data to the file mytidyset.txt with \t separator.  
 6. Additional code, Line from 137: Using "aggregate" function do the step 5 again, then write file secondway.txt.  
 Also, comapare data from first set to this one (tidyData == aggrSorted)  
    
