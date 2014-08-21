@@ -29,7 +29,7 @@ The dataset includes the following files:
 
 'test/X_test.txt': Test set.
 
-'test/y_test.txt': Test labels.
+'test/y_test.txt': Test labels.  
 
 The following files are available for the train and test data. Their descriptions are equivalent.
 
