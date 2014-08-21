@@ -1,7 +1,7 @@
 ##0 - Preset steps
 ##Set path to git repo on local, because wd in R proj is different, 
 ##this step can be skipped
-## OR, use Rscript to pass in first argument 
+## OR, use Rscript to pass in first argument  
 ## path to your writable directory, that will be used as home directory
 
 ##Use something like this 
